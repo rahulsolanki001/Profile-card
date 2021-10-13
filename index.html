@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Profile card component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans&display=swap');
+    body{font-family: 'Kumbh Sans',sans-serif;font-size: 18px;background-color:hsl(185, 75%, 39%)}
+    .card{width: 25%;margin-left:40%;margin-right: 40%;margin-top: 15%;margin-bottom: 15%;background-color: white;border: 2px solid hsl(185, 75%, 39%);border-radius: 20px;;}
+    img{position:relative;border: 1px solid hsl(185, 75%, 39%);border-top-left-radius: 20px;border-top-right-radius: 20px;border-bottom: none;border-top: none;}
+    .footer{border: 1px solid hsl(0, 0%, 59%);border-left: none;border-right: none;border-bottom: none;display: flex;flex-flow: row;justify-content: space-evenly;}
+    .victor{margin-top: 20%;margin-left: 35%; color: hsl(0, 0%, 59%);}
+    .london{color: hsl(0, 0%, 59%);margin-left: 50%; font-size: 14px;}
+    p{color: hsl(0, 0%, 59%);}
+    span{font-weight: 700;color: black;}
+    .pattern{z-index: 1;width: 100%;}
+    .profile{margin-top: none;margin-bottom: 10%;z-index: 3;background-color: white;border: 4px solid white;border-radius: 50%;left: 50%;top:45% ;position: absolute;}
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <div class='card'>
+    <div class='top'>
+      <img src="./images/bg-pattern-card.svg" alt="card pattern image" class='pattern'>
+      <img src="./images/image-victor.jpg" alt="victor profile image" class='profile'>
+      <p class='victor'><span>Victor Crest</span>  26</p>
+      <p class='london'>London</p>
+    </div>
+    <div class='footer'>
+      <div>
+        <h4>80K</h4>
+        <p>Followers</p>
+      </div>
+      <div>
+        <h4>803K</h4>
+        <p>Likes</p>
+      </div>
+      <div>
+        <h4>1.4K</h4>
+        <p>Photos</p>
+      </div>
+    </div>
+  </div>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Rahul Solanki</a>.
+  </div>
+</body>
+</html>
